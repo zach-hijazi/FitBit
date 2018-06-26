@@ -29,8 +29,9 @@ def main():
     #get list of variables to plot versus data
     variables = list(df)
     variables.remove('date')
+    import pdb; import pdb; pdb.set_trace()
 
-    #get x and y, then recursively plot all variables versus date 
+    #get x and y, then recursively plot all variables versus date
     x = df['date'][0]
     for variable in variables:
         labels = ['date', variable]
